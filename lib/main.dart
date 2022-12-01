@@ -13,6 +13,6 @@ void main() {
     theme: BlinUITheme.lightTheme,
     home: const SplashScreen(),
     localizationsDelegates: GlobalMaterialLocalizations.delegates,
-    supportedLocales: const [Locale('idn')],
+    supportedLocales: const [Locale('id')],
   ));
 }

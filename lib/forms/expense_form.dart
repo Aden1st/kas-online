@@ -70,7 +70,7 @@ class _ExpenseFormState extends State<ExpenseForm> {
             controller: costController,
             validationRules: ["required"],
             keyboardType: TextInputType.number,
-            icon: const Icon(Icons.attach_money),
+            icon: const Icon(Icons.money),
           ),
           UiController.renderDateTimePicker(
             hint: "Date",

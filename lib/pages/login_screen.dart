@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: loadingBallAppear
             ? Padding(
                 padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30.0),
-                child: MessagesScreen())
+                child: HomePage())
             : Padding(
                 padding: EdgeInsets.symmetric(horizontal: 50.0),
                 child: SingleChildScrollView(
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       SizedBox(height: 70),
                       TweenAnimationBuilder<double>(
-                        duration: Duration(milliseconds: 300),
+                        duration: Duration(milliseconds: 3000),
                         tween: Tween(begin: 1, end: _elementsOpacity),
                         builder: (_, value, __) => Opacity(
                           opacity: value,
@@ -90,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               },
                               onAnimatinoEnd: () async {
                                 await Future.delayed(
-                                    Duration(milliseconds: 500));
+                                    Duration(milliseconds: 3000));
                                 setState(() {
                                   loadingBallAppear = true;
                                 });
